@@ -38,7 +38,7 @@ jobs:
       if: ${{ always() }}
 
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
+      uses: codecov/codecov-action@v5
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         files: test-results/coverage.cobertura.xml
